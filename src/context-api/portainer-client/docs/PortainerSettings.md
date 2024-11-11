@@ -1,0 +1,43 @@
+# PortainerCeApi.PortainerSettings
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**agentSecret** | **String** | Container environment parameter AGENT_SECRET | [optional] 
+**allowBindMountsForRegularUsers** | **Boolean** |  | [optional] 
+**allowContainerCapabilitiesForRegularUsers** | **Boolean** |  | [optional] 
+**allowDeviceMappingForRegularUsers** | **Boolean** |  | [optional] 
+**allowHostNamespaceForRegularUsers** | **Boolean** |  | [optional] 
+**allowPrivilegedModeForRegularUsers** | **Boolean** |  | [optional] 
+**allowStackManagementForRegularUsers** | **Boolean** |  | [optional] 
+**allowVolumeBrowserForRegularUsers** | **Boolean** |  | [optional] 
+**authenticationMethod** | **Number** | Active authentication method for the Portainer instance. Valid values are: 1 for internal, 2 for LDAP, or 3 for oauth | [optional] 
+**blackListedLabels** | [**[PortainerPair]**](PortainerPair.md) | A list of label name & value that will be used to hide containers when querying containers | [optional] 
+**displayDonationHeader** | **Boolean** | Deprecated fields | [optional] 
+**displayExternalContributors** | **Boolean** |  | [optional] 
+**edgeAgentCheckinInterval** | **Number** | The default check in interval for edge agent (in seconds) | [optional] 
+**edgePortainerUrl** | **String** | EdgePortainerURL is the URL that is exposed to edge agents | [optional] 
+**enableEdgeComputeFeatures** | **Boolean** | Whether edge compute features are enabled | [optional] 
+**enableHostManagementFeatures** | **Boolean** | Deprecated fields v26 | [optional] 
+**enableTelemetry** | **Boolean** | Whether telemetry is enabled | [optional] 
+**enforceEdgeID** | **Boolean** | EnforceEdgeID makes Portainer store the Edge ID instead of accepting anyone | [optional] 
+**featureFlagSettings** | **{String: Boolean}** |  | [optional] 
+**globalDeploymentOptions** | [**PortainerGlobalDeploymentOptions**](PortainerGlobalDeploymentOptions.md) | Deployment options for encouraging git ops workflows | [optional] 
+**helmRepositoryURL** | **String** | Helm repository URL, defaults to \"https://charts.bitnami.com/bitnami\" | [optional] 
+**internalAuthSettings** | [**PortainerInternalAuthSettings**](PortainerInternalAuthSettings.md) |  | [optional] 
+**isDockerDesktopExtension** | **Boolean** |  | [optional] 
+**kubeconfigExpiry** | **String** | The expiry of a Kubeconfig | [optional] 
+**kubectlShellImage** | **String** | KubectlImage, defaults to portainer/kubectl-shell | [optional] 
+**lDAPSettings** | [**PortainerLDAPSettings**](PortainerLDAPSettings.md) |  | [optional] 
+**logoURL** | **String** | URL to a logo that will be displayed on the login page as well as on top of the sidebar. Will use default Portainer logo when value is empty string | [optional] 
+**oAuthSettings** | [**PortainerOAuthSettings**](PortainerOAuthSettings.md) |  | [optional] 
+**showKomposeBuildOption** | **Boolean** | Show the Kompose build option (discontinued in 2.18) | [optional] 
+**snapshotInterval** | **String** | The interval in which environment(endpoint) snapshots are created | [optional] 
+**templatesURL** | **String** | URL to the templates that will be displayed in the UI when navigating to App Templates | [optional] 
+**trustOnFirstConnect** | **Boolean** | TrustOnFirstConnect makes Portainer accepting edge agent connection by default | [optional] 
+**userSessionTimeout** | **String** | The duration of a user session | [optional] 
+**edge** | [**PortainerSettingsEdge**](PortainerSettingsEdge.md) |  | [optional] 
+**fdoConfiguration** | [**PortainerFDOConfiguration**](PortainerFDOConfiguration.md) |  | [optional] 
+**openAMTConfiguration** | [**PortainerOpenAMTConfiguration**](PortainerOpenAMTConfiguration.md) |  | [optional] 
+
+
